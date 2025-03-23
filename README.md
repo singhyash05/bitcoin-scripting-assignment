@@ -43,6 +43,5 @@ python prg2.py
 2. Yash Singh - Roll No. - 230051019
 3. Hardik Bansal - Roll No. - 230001031
 
-These scripts will guide you through transaction creation, analysis, and broadcasting.  
 
 ---
