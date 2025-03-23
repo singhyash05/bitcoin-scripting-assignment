@@ -1,0 +1,15 @@
+Transaction from A to B: a5b500e6f0dee988d01542467ad46af92580b8da265a942dd3dab7a769973a89
+Virtual Size: 191 vBytes
+Weight: 764 weight units
+ScriptPubKey (Challenge Script): OP_DUP OP_HASH160 0c9133a5b94919b3987cd8b8f0518f5a33256ec8 OP_EQUALVERIFY OP_CHECKSIG
+
+Transaction from B to C: f12cecff0d9ef0b7f617e2841f62edb9101daac8cb31a3d4f8123bf36cbcfd91
+Virtual Size: 191 vBytes
+Weight: 764 weight units
+ScriptSig (Response Script): 3044022024eb8c3162109fe874d5bc36b7a823f3b9251f27abe6ecf105f32c02c57a1ea9022040809d375c1b2db301be19aada89f778cdd2e44d007c4fcb4c6e456e8018e662[ALL] 031ee9dc4ef0565eb8a13eb495f0b1083838bd8f198eaf329c90d56726fdb836f0
+
+=== Information for Bitcoin Script Debugger ===
+1. ScriptPubKey (from A to B transaction):
+   OP_DUP OP_HASH160 0c9133a5b94919b3987cd8b8f0518f5a33256ec8 OP_EQUALVERIFY OP_CHECKSIG
+2. ScriptSig (from B to C transaction):
+   3044022024eb8c3162109fe874d5bc36b7a823f3b9251f27abe6ecf105f32c02c57a1ea9022040809d375c1b2db301be19aada89f778cdd2e44d007c4fcb4c6e456e8018e662[ALL] 031ee9dc4ef0565eb8a13eb495f0b1083838bd8f198eaf329c90d56726fdb836f0
