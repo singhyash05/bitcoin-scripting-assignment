@@ -42,5 +42,3 @@ python prg2.py
 These scripts will guide you through transaction creation, analysis, and broadcasting.  
 
 ---
-
-Let me know if you need any modifications! 🚀
