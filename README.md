@@ -37,7 +37,11 @@ Run the Python scripts to interact with Bitcoin Core:
 ```bash
 python prg1.py
 python prg2.py
-```  
+```
+## Team Members
+1. Shorya Kshettry - Roll No. - 230003070
+2. Yash Singh - Roll No. - 230051019
+3. Hardik Bansal - Roll No. - 230001031
 
 These scripts will guide you through transaction creation, analysis, and broadcasting.  
 
