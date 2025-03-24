@@ -6,7 +6,7 @@ This project demonstrates how to interact with Bitcoin Core using RPC to create,
 
 - Bitcoin Core installed and configured  
 - Python 3.6+  
-- `python-bitcoinrpc` library  
+- `python-bitcoinrpc` library   
 
 ## Setup  
 
