@@ -2,7 +2,7 @@ import subprocess
 import json
 import time
 
-BITCOIN_CLI = "/home/shorya/blockchain/bitcoin-27.0-x86_64-linux-gnu/bitcoin-27.0/bin/bitcoin-cli"
+BITCOIN_CLI = "/home/yash-singh/bitcoin-25.0/bin/bitcoin-cli"
 
 def run_command(args):
     try:
@@ -121,7 +121,13 @@ def main():
         return
     
     signed_tx = json.loads(signed_tx_json)
-    print(f"Transaction A to B signed successfully.")
+    signed_tx_hex_a_to_b = signed_tx.get("hex")
+    if not signed_tx_hex_a_to_b:
+        print("No hex in A→B signed response:", signed_tx); return
+
+    print("Raw hex (A→B):", signed_tx_hex_a_to_b)
+    print("Transaction A to B signed successfully.")
+
     
     # Broadcast the transaction
     if "hex" not in signed_tx:
@@ -182,7 +188,13 @@ def main():
         return
     
     signed_tx_b = json.loads(signed_tx_b_json)
-    print(f"Transaction B to C signed successfully.")
+    signed_tx_hex_b_to_c = signed_tx_b.get("hex")
+    if not signed_tx_hex_b_to_c:
+        print("No hex in B→C signed response:", signed_tx_b); return
+
+    print("Raw hex (B→C):", signed_tx_hex_b_to_c)
+    print("Transaction B to C signed successfully.")
+
     
     # Broadcast the transaction
     if "hex" not in signed_tx_b:
