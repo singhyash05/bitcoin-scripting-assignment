@@ -15,7 +15,7 @@ This project demonstrates how to interact with Bitcoin Core using RPC to create,
 Regtest mode allows you to create a local Bitcoin blockchain for testing:  
 
 ```bash
-bitcoind -regtest -daemon
+ bitcoind -regtest -daemon -fallbackfee=0.0002
 ```  
 
 ### 2. Create a Wallet  
@@ -24,11 +24,23 @@ Create a new wallet or use an existing one:
 
 ```bash
 bitcoin-cli -regtest createwallet "mywallet"
+```
+
+If already created wallet or use an existing one:  
+
+```bash
+bitcoin-cli -regtest loadwallet "mywallet"
 ```  
 
 ### 3. Configure RPC Credentials  
 
 Ensure your RPC credentials are set in the `~/.bitcoin/bitcoin.conf` file.  
+Set 
+```python
+  BITCOIN_CLI = "/home/yash-singh/bitcoin-25.0/bin/bitcoin-cli"
+```
+in both python programs (prg1.py and prg2.py)
+ 
 
 ## Usage  
 
